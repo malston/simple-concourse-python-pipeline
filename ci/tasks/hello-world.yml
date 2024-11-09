@@ -21,4 +21,4 @@ run:
       cd repo/ci/tasks
       python -m pip install --upgrade pip &> /dev/null
       pip install numpy &> /dev/null
-      python task.py
+      python hello-world.py
