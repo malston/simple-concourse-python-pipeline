@@ -1,6 +1,14 @@
 ---
+resources:
+- name: repo
+  type: git
+  source:
+    uri: https://github.com/malston/simple-concourse-python-pipeline.git
+
 jobs:
 - name: hello-world-job
   plan:
+  - get: repo
+    trigger: true
   - task: hello-world-task
-    file: ci/tasks/hello-world.yml
+    file: repo/ci/tasks/hello-world.yml
