@@ -2,26 +2,10 @@
 
 ## Tutorial
 
-Install `fly`
-
-```sh
-curl 'http://localhost:8080/api/v1/cli?arch=amd64&platform=darwin' -o fly
-./fly --version
-chmod +x ./fly
-./fly --version
-sudo mv ./fly /usr/local/bin/
-```
-
-Login
+Login to Concourse
 
 ```sh
 fly -t tutorial login -c http://localhost:8080 -u test -p test
-```
-
-Check workers
-
-```sh
-fly -t tutorial workers
 ```
 
 Test python script
