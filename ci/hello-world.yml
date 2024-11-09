@@ -1,0 +1,6 @@
+---
+jobs:
+- name: hello-world-job
+  plan:
+  - task: hello-world-task
+    file: ci/tasks/hello-world.yml
