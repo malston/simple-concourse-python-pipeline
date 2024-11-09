@@ -37,11 +37,3 @@ fly -t tutorial set-pipeline -p hello-world -c ci/hello-world.yml
 fly -t tutorial unpause-pipeline -p hello-world
 fly -t tutorial trigger-job --job hello-world/hello-world-job --watch
 ```
-
-## Simple Python Pipeline
-
-Execute python script
-
-```sh
-fly -t tutorial execute -c ci/simple-python-pipeline/task.yml -i repo=.
-```
